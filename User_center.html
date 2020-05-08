@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<style type="text/css">
+			.main {
+				background-color: #f1f1f1;
+			}
+			.member_navigation {
+				line-height: 36px;
+				margin-bottom: 18px;
+			}
+			.member_navigation a{
+				color: #666666;
+				text-decoration: none;
+			}
+			.user_nav{
+				width: 210px;
+				background-color: #FFFFFF;
+			}
+			.head_portiait{
+				background: url(img/user_center_img/Head_portrait.png) top center;
+				width: 110px;
+				height: 116px;
+				margin: 0 auto;
+			}
+			.user_name{
+				text-align: center;
+				font-size: 14px;
+				color: #000000;
+				padding-bottom: 6px;
+			}
+			.grade{
+				color: #b3a26b;
+				display: inline;
+				border: 1px solid #b3a26b;
+				border-radius: 9px;
+				padding: 0 6px;
+				margin: 0 86px;
+			}
+			.user_list{
+				padding: 30px 0 0 30px;
+			}
+			.user_block{
+				margin-bottom: 30px;
+			}
+			.user_title{
+				line-height: 44px;
+				font-size: 16px;
+				color: #666666;
+			}
+			.user_term{
+				line-height: 32px;
+			}
+			.user_term a{
+				color: #666666;
+				text-decoration: none;
+			}
+			.on a{
+				color: #333333;
+				font-size: 14px;
+			}
+			.show_contents{
+				width: 970px;
+				background-color: #FFFFFF;
+			}
+			.display{
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 引入表头 -->
+		<iframe src="header.html" width="100%" height="30px" scrolling="no"></iframe>
+		
+		<div class="main">
+			<div class="container">
+				<!--  -->
+				<div class="member_navigation">
+					<a href="index.html" target="_blank">首页</a>
+					<a href="#" target="_blank">> 会员中心</a>
+					<a href="#" target="_self">> 我的预售</a>
+				</div>
+				<div class="user_nav fl">
+					<div class="head_portiait"></div>
+					<div class="user_name">wb5698891</div>
+					<div class="grade">普卡</div>
+					<div class="user_list">
+						<ul class="user_block">
+							<li class="user_title">订单中心</li>
+							<li class="user_term on"><a href="my_order.html" target="display">我的订单</a></li>
+							<li class="user_term"><a href="./html/user_center/advance_sale.html" target="display">我的预售</a></li>
+							<li class="user_term"><a href="./html/user_center/gift_list.html" target="display">我的礼品单</a></li>
+							<li class="user_term"><a href="./html/user_center/customer_service.html" target="display">售后服务</a></li>
+							<li class="user_term"><a href="./html/user_center/refund_application.html" target="display">退款申请</a></li>
+							<li class="user_term"><a href="./html/user_center/customer_service_after_sale.html" target="display">售后维修</a></li>
+						</ul>
+						<ul class="user_block">
+							<li class="user_title">账户设置</li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">个人资料</a></li>
+							<li class="user_term"><a href="./html/user_center/receiving_address.html" target="display">收货地址</a></li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">密码设置</a></li>
+						</ul>
+						<ul class="user_block">
+							<li class="user_title">资产中心</li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">我的青苗</a></li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">优惠券</a></li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">余额</a></li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">发票管理</a></li>
+						</ul>
+						<ul class="user_block">
+							<li class="user_title">关注中心</li>
+							<li class="user_term"><a href="./html/user_center/my_collection.html" target="display">我的收藏</a></li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">我的评价</a></li>
+							<li class="user_term"><a href="javascript:void(0);" target="display">足迹</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="show_contents fr">
+					<iframe src="my_order.html" width="970px" height="500px" frameborder="no" class="display" name="display"></iframe>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- 引入表尾 -->
+		<iframe src="footer.html" width="100%" height="649px" scrolling="no"></iframe>
+		<!-- 引用jQuery -->
+		<script src="./js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.user_term a').click(function(){
+				$('.user_term').removeClass('on');
+				$(this).parent().addClass('on');
+				var txt = $(this).text();
+				$('.member_navigation a:eq(2)').text('>'+txt)
+			})
+		</script>
+	</body>
+</html>

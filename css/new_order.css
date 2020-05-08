@@ -1,0 +1,457 @@
+.container {
+	width: 1100px;
+}
+
+.head {
+	margin-top: 10px;
+}
+
+.head .logo {
+	padding-left: 50px;
+}
+
+.head .nav .gray_line {
+	width: 500px;
+	height: 1px;
+	background: #eee;
+	position: relative;
+	margin-top: 46px;
+	margin-right: 20px;
+	padding-right: 20px;
+}
+
+.nav .red_line {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 150px;
+	background: #cc5252;
+	height: 1px;
+}
+
+.nav .one {
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	height: 8px;
+	width: 8px;
+	border-radius: 8px;
+	background: #cc5252;
+}
+
+.nav .two {
+	position: absolute;
+	left: 150px;
+	bottom: -8px;
+	height: 18px;
+	width: 18px;
+	border-radius: 18px;
+	background: #cc5252;
+}
+
+.nav .three {
+	position: absolute;
+	left: 320px;
+	bottom: -5px;
+	height: 8px;
+	width: 8px;
+	border-radius: 8px;
+	border: 2px solid #ccc;
+	background: white;
+}
+
+.nav .four {
+	position: absolute;
+	left: 500px;
+	bottom: -5px;
+	height: 8px;
+	width: 8px;
+	border-radius: 8px;
+	border: 2px solid #ccc;
+	background: white;
+}
+
+.nav .one_1,
+.nav .three_3,
+.nav .four_4 {
+	position: absolute;
+	bottom: -30px;
+	color: #999;
+	font-size: 12px;
+}
+
+.nav .one_1 {
+	left: -10px;
+}
+
+.nav .two_2 {
+	position: absolute;
+	left: 126px;
+	bottom: -30px;
+	color: #cc5252;
+}
+
+.nav .three_3 {
+	left: 302px;
+}
+
+.nav .four_4 {
+	left: 472px;
+}
+
+/* 主要部分开始了 */
+.body {
+	margin-top: 30px;
+	padding-left: 22px;
+}
+
+.body .title {
+	color: #333333;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.body .go {
+	display: inline-block;
+	color: #477db3;
+	margin-left: 10px;
+	font-size: 12px;
+	text-decoration: underline;
+	font-weight: 400;
+}
+
+/* 送货清单 */
+.body .menu {
+	margin: 50px 0 30px;
+}
+
+.menu .product_box .name {
+	height: 30px;
+	line-height: 30px;
+	background: #f1f1f1;
+	color: #999;
+	padding: 0 15px;
+	margin-right: 8px;
+}
+
+.menu .product_box .main {
+	padding-top: 22px;
+
+}
+
+.menu .main .product {
+	max-width: 700px;
+	margin-bottom: 30px;
+}
+
+.menu .main .product .pro_title {
+	line-height: 26px;
+	font-weight: 700;
+	white-space: nowrap;
+	margin: 1px 0 2px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.menu .main .product .design {
+	color: #999;
+	font-size: 12px;
+}
+
+.menu .main .product .yellow {
+	line-height: 16px;
+	margin-top: 19px;
+	text-align: center;
+	color: #b3a26b;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	width: 60px;
+}
+
+/* 单价 */
+.menu .main .unit_price {
+	position: absolute;
+	top: 30px;
+	right: 300px;
+}
+
+/* 数量 */
+.menu .counter {
+	display: block;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 30px;
+	right: 200px;
+}
+
+.menu .counter .left,
+.menu .counter .right {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	text-align: center;
+	/* border: 1px solid #ccc; */
+	font-size: 14px;
+	line-height: 19px;
+	cursor: pointer;
+	color: #999;
+}
+
+.menu .counter .number {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 2px 20px;
+	outline: none;
+}
+
+/* 单个总价 */
+.menu .amount {
+	position: absolute;
+	top: 30px;
+	right: 100px;
+}
+
+.body .ticket {
+	margin: 50px 0;
+}
+
+.body .ticket .txt {
+	color: #999;
+}
+
+.body .ticket i {
+	color: #CC5252;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.body .talk {
+	margin-bottom: 50px;
+}
+
+.body .talk small {
+	position: absolute;
+	left: 270px;
+	bottom: 10px;
+	width: 20px;
+	height: 14px;
+}
+
+/* 时间线 */
+.timeline {
+	height: 1050px;
+	width: 2px;
+	background: #EEEEEE;
+	position: absolute;
+	top: 128px;
+	left: 0;
+}
+
+.timeline .one,
+.timeline .two,
+.timeline .three,
+.timeline .four,
+.timeline .five {
+	position: absolute;
+	left: -7px;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	color: #666;
+	border: 2px solid #666;
+	text-align: center;
+	line-height: 12px;
+	font-weight: 900;
+}
+
+.timeline .one {
+	top: -8px;
+}
+
+.timeline .two {
+	top: 230px;
+}
+
+.timeline .three {
+	top: 636px;
+}
+
+.timeline .four {
+	top: 734px;
+}
+
+.timeline .five {
+	top: 831px;
+}
+
+/* 合计总数 */
+p {
+	text-align: right;
+	line-height: 20px;
+}
+
+p i {
+	display: block;
+	float: right;
+	font-style: normal;
+	color: #CC5252;
+	margin-left: 50px;
+	margin-right: 20px;
+	min-width: 42px;
+}
+
+.ok {
+	width: 100%;
+	height: 60px;
+	margin: 40px 180px 130px 0;
+	background: #f2f2f2;
+}
+
+.ok span {
+	margin-left: 790px;
+	line-height: 60px;
+	color: 666;
+	font-weight: 700;
+}
+
+#total_price {
+	font-style: normal;
+	color: #cc5252;
+	font-weight: 700;
+	margin-left: 10px;
+}
+
+.red {
+	background: #CC5252;
+	height: 60px;
+	color: white;
+	font-weight: 700;
+	position: absolute;
+	width: 180px;
+	top: 0;
+	right: 0;
+	text-align: center;
+	line-height: 60px;
+}
+
+/* 收货地址 */
+.tips {
+	height: 200px;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.receiving_address {
+	margin-top: 20px;
+	clear: both;
+}
+
+/* 添加地址蓝框样式 */
+.Newly_added {
+	width: 310px;
+	border: 1px dotted #477db3;
+	color: #477db3;
+	font-weight: 700;
+	text-align: center;
+	line-height: 80px;
+	height: 80px;
+	margin: 0px 20px 8px 0px;
+	float: left;
+	background: white;
+	cursor: pointer;
+	outline: none;
+}
+
+/* 弹窗的样式 */
+.Consignee {
+	display: inline-block;
+	padding: 36px 0 10px 40px;
+
+}
+
+.input {
+	height: 36px;
+	width: 320px;
+	border: 0;
+	border-bottom: 1px solid #DDDDDD;
+	font-size: 16px;
+	color: #333333;
+	outline: 0;
+}
+
+.form-control {
+	width: 160px;
+	height: 36px;
+	border: 1px solid #dddddd;
+	color: #999999;
+	font-size: 16px;
+	padding-left: 5px;
+	margin-right: 8px;
+}
+
+.address_input {
+	width: 480px;
+}
+
+/* 新增红窗的样式 */
+.Existing_address {
+	border: 2px solid #cc5252;
+	height: 56px;
+	width: 248px;
+	margin: 0px 20px 8px 0px;
+	padding: 10px 30px;
+	float: left;
+	position: relative;
+}
+
+.consignee_text {
+	font-size: 12px;
+	color: #cc5252;
+	font-weight: 700;
+	float: left;
+}
+
+.Cell_phone_number_text {
+	margin-left: 10px;
+	font-size: 8px;
+	color: #cc5252;
+	font-weight: 700;
+	float: left;
+}
+
+.addr span {
+	padding: 6px 0;
+}
+
+.Already_existing {
+	display: inline-block;
+}
+
+/* 修改删除 */
+.edit {
+	position: absolute;
+	right: 45px;
+	bottom: 10px;
+	color: #477db3;
+	cursor: pointer;
+	display: none;
+}
+
+.Existing_address:hover .edit {
+	display: inline;
+}
+
+.del {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	color: #477db3;
+	cursor: pointer;
+	display: none;
+}
+
+.Existing_address:hover .del {
+	display: inline;
+}

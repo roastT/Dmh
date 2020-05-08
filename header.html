@@ -1,0 +1,79 @@
+
+	
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/header&footer.css" />
+	
+		<div class="header">
+			<div class="container clearfix">
+				<div class="yellow fl">
+					<a href="index.html">正品保障，免息分期！</a>
+				</div>
+				<div class="move_box fl relative">
+					<div class="move">
+						面对疫情积极防备，所有腕表发货前均已消毒，顺丰物流快捷送到家。万表网持续为广大表友提供专业咨询、便捷购物、安心签收的购物体验。祝您春节安康，百毒不侵！
+					</div>
+				</div>
+				<div class="fr clearfix">
+					<div class="fl">
+						<a href="login.html">请登录</a>
+					</div>
+					<div class="redister fl">
+						<a href="register.html">注册即送3500元大礼包</a>
+					</div>
+					<div class="line fl">|</div>
+					<div class="fl">
+						<a href="shopping_cart.html">购物车</a>
+					</div>
+					<div class="user_server_box fl relative">
+						<a href="user_center.html">客户服务</a>
+						<div class="user_server">
+							<div class="top clearfix">
+								<div class="white"></div>
+								<div class="fl">
+									<a href="#">客户顾问</a>
+								</div>
+								<div class="fl">
+									<a href="#">售后维修</a>
+								</div>
+								<div class="fl">
+									<a href="#">帮助中心</a>
+								</div>
+								<div class="fl">
+									<a href="#">办理信用卡</a>
+								</div>
+							</div>
+
+							<div class="phone">
+								<div>服务专线：400-883-2688</div>
+								<div>外呼号码：020-83931899</div>
+							</div>
+						</div>
+					</div>
+					<div class="fl">
+						<a href="#">会员福利</a>
+					</div>
+					<div class="line fl">|</div>
+					<div class="fl">
+						<a href="#">ENGLISH</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var x = 0;
+
+			function move() {
+				if (x > -900) {
+					x--;
+				} else {
+					x = 400;
+				}
+
+				var move = x + 'px'
+				// console.log(move)
+				$('.move').css("left", move);
+			}
+			setInterval(move, 15)
+		</script>
+	

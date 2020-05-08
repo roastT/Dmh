@@ -1,0 +1,261 @@
+/* 表头 */
+.logo1_txt{
+	padding-top: 3px;
+	font-size: 13px;
+}
+.title_lf{
+	padding-right: 10px;
+	position: relative;
+}
+.title{
+	margin-top: 5px;
+}
+.title_bg{
+	position: absolute;
+	top: 25px;
+	left: -20px;
+	border: 4px solid goldenrod;
+	display: none;
+}
+.title_hover:hover .title_bg{
+	display: block;
+}
+/* 标题 */
+.text{
+	text-align: center;
+	margin-top: 40px;
+}
+/* banner */
+.banner{
+	margin-top: 30px;
+	margin-bottom: 80px;
+	
+}
+.banner .swiper-container{
+	width: 100%;
+	height:380px ;
+}
+.banner .swiper-pagination-bullet{
+	background-color: coral;
+}
+.banner_title{
+	font-size: 24px;
+	padding-top: 45px;
+	color: #af8034;
+	text-align: center;
+}
+.banner_title span{
+	color: crimson;
+}
+.note{
+	margin-top: 70px;
+}
+.note_title{
+	font-size: 20px;
+	color: #af8034;
+	font-weight: bold;
+}
+.note_txt{
+	font-size: 13px;
+	color: #af8034;
+}
+.note_box{
+	padding-left: 90px;
+}
+/* 服务流程 */
+.serve{
+	margin: 0 auto;
+	width: 100%;
+	height: 700px;
+	background: url(../img/maintain/ia_200000024.jpg);
+}
+.serve_text{
+	text-align: center;
+	padding-top: 50px;
+}
+.server_en{
+	font-size: 22px;
+	color: #af8034;
+}
+.server_cn{
+	font-size: 24px;
+	font-weight: bold;
+	color: #af8034;
+	padding-top: 5px;
+}
+.email,.city{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 2px;
+	cursor: pointer;
+	border: 1px solid #af8034;
+}
+.email{
+	background-color: #af8034;
+	color: white;
+}
+.city{
+	color: #af8034;
+}
+.select{
+	padding: 40px 0px 0px 450px;
+}
+.flow_box{
+	width: 250px;
+	height: 280px;
+	background-color: white;
+	margin-left: 41px;
+}
+.flow{
+	padding-top: 40px;
+	position: relative;
+}
+.flow_title,.flow_txt,.flow_num{
+	padding: 0px 35px;
+}
+.flow_title{
+	font-size: 24px;
+	font-weight: bold;
+	color: #af8034;
+	padding-top: 30px;
+}
+.flow_txt{
+	font-size: 15px;
+	padding-top: 15px;
+}
+.flow_num{
+	font-size: 90px;
+	padding-top: 50px;
+}
+.position1{
+	position: absolute;
+	left: 291px;
+	top: 40px;
+	display: none;
+}
+.position2{
+	position: absolute;
+	right: 36px;
+	top: 40px;
+	display: none;
+}
+.code{
+	padding: 50px 0px 0px 470px;
+}
+.code_txt{
+	background: url(../img/maintain/ia_200000025.png) no-repeat;
+	width: 197px;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 20px;
+	font-size: 13px;
+	color: white;
+	margin-top: 30px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+/* 维修地点 */
+.site{
+	margin-top: 15px;
+}
+.selected{
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17px;
+	outline: none;
+	/* margin-bottom: 100px; */
+	color: #ab613e;
+	background-color: #dd7c50;
+	border: 1px solid #ab613e;
+}
+.meau{
+	padding: 30px 0px 0px 355px;
+}
+.selected option{
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17px;
+}
+.meau_txt{
+	font-size: 13px;
+	color: #ab613e;
+	text-align: center;
+	padding-top: 15px;
+}
+.meau_img{
+	margin-top: 30px;
+}
+/* 介绍 */
+.introduce{
+	background-color: #F2F2F2;
+	width: 100%;
+	/* height: 600px; */
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 90px;
+}
+.introduce_en{
+	text-align: center;
+	font-size: 19px;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 40px;
+}
+.introduce_cn{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	padding-top: 5px;
+}
+.introduce_title{
+	font-size: 19px;
+	font-weight: bold;
+	color: #000000;
+}
+.introduce_txt{
+	font-size: 14px;
+	padding-top: 5px;
+}
+.introduce_text{
+	padding-bottom: 30px;
+}
+.introduce_txt_box{
+	padding: 0px 225px;
+	margin-top: 20px;
+}
+/* 表尾 */
+.footer_note{
+	text-align: center;
+	font-size: 14px;
+	color: #ab613e;
+}
+.footer_note span{
+	padding: 5px 15px;
+}
+.footer_note a{
+	color: #ab613e;
+}
+.footer_phone{
+	text-align: center;
+	padding-top: 5px;
+	font-size: 12px;
+	color: #ab613e;
+}
+.footer_ICP{
+	text-align: center;
+	padding-top: 5px;
+	color: #ab6143;
+}
+.footer_copy{
+	font-size: 12px;
+	text-align: center;
+	color: grey;
+	padding: 5px 0px;
+}

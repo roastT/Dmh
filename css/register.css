@@ -1,0 +1,105 @@
+body,html{
+	background-color: #F2F2F2;
+}
+.title{
+	padding: 45px 0px 0px 172px;
+}
+/* 注册板块 */
+.input_body{
+	width: 1000px;
+	/* height: 550px; */
+	background-color: white;
+	text-align: center;
+}
+.body{
+	padding: 30px 0px 0px 172px;
+}
+.input_body_box{
+	width: 400px;
+	margin: 0 auto;
+}
+.input_title{
+	font-size: 30px;
+	color: #000000;
+	padding: 32px 0px;
+}
+.public{
+	width: 320px;
+	height: 34px;
+	padding-left: 40px;
+	margin-left: 8px;
+}
+.verify,.note{
+	margin-left: 18px;
+	width: 207px;
+	height: 34px;
+	padding-left: 40px;
+}
+.input_box{
+	padding: 5px 0px;
+	position: relative;
+}
+.verify_ph{
+	padding-left: 15px;
+}
+.note_ph{
+	width: 98px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #000000;
+	border: 1px solid darkgray;
+	margin-left: 13px;
+}
+.login{
+	width: 365px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: white;
+	background-color: crimson;
+	border: 1px solid crimson;
+	cursor: pointer;
+	outline: none;
+}
+.input_box input{
+	outline: none;
+	background-color: white;
+	
+}
+.input_txt{
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+.input_txt a{
+	color: #000000;
+}
+.ph1{
+	position: absolute;
+	top: 7px;
+	left: 28px;
+}
+.ph2{
+	position: absolute;
+	top: 7px;
+	left: 28px;
+}
+.ph3{
+	position: absolute;
+	top: 6px;
+	left: 27px;
+}
+.ph4,.ph5,.ph6,.ph7{
+	cursor: pointer;
+	position: absolute;
+	top: 13px;
+	right: 25px;
+}
+.ph5,.ph7{
+	display: none;
+}
+.padl{
+	margin-left: 4px;
+}
+

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		.<style type="text/css">
+			.container {
+				width: 1100px;
+			}
+
+			.head {
+				margin-top: 10px;
+			}
+
+			.head .logo {
+				padding-left: 50px;
+			}
+
+			.head .nav .gray_line {
+				width: 500px;
+				height: 1px;
+				background: #eee;
+				position: relative;
+				margin-top: 46px;
+				margin-right: 20px;
+				padding-right: 20px;
+			}
+
+			.nav .one {
+				position: absolute;
+				left: 0;
+				bottom: -8px;
+				height: 18px;
+				width: 18px;
+				border-radius: 18px;
+				background: #cc5252;
+			}
+
+			.nav .two {
+				position: absolute;
+				left: 150px;
+				bottom: -5px;
+				height: 8px;
+				width: 8px;
+				border-radius: 8px;
+				border: 2px solid #ccc;
+				background: white;
+			}
+
+			.nav .three {
+				position: absolute;
+				left: 320px;
+				bottom: -5px;
+				height: 8px;
+				width: 8px;
+				border-radius: 8px;
+				border: 2px solid #ccc;
+				background: white;
+			}
+
+			.nav .four {
+				position: absolute;
+				left: 500px;
+				bottom: -5px;
+				height: 8px;
+				width: 8px;
+				border-radius: 8px;
+				border: 2px solid #ccc;
+				background: white;
+			}
+
+			.nav .one_1,
+			.nav .two_2,
+			.nav .three_3,
+			.nav .four_4 {
+				position: absolute;
+				bottom: -30px;
+				color: #999;
+				font-size: 12px;
+			}
+
+			.nav .one_1 {
+				left: -10px;
+				color: #cc5252;
+			}
+
+			.nav .two_2 {
+				left: 126px;
+			}
+
+			.nav .three_3 {
+				left: 302px;
+			}
+
+			.nav .four_4 {
+				left: 472px;
+			}
+
+			.title {
+				line-height: 40px;
+				font-size: 14px;
+				color: #333;
+			}
+
+			.main {
+				margin-top: 60px;
+			}
+
+			.cart_nav {
+				line-height: 34px;
+				background: #f5f5f5;
+				color: #666;
+				margin-bottom: 20px;
+			}
+
+			.cart_nav input {
+				margin-left: 10px;
+			}
+
+			.All_election {
+				display: inline-block;
+				margin-left: 20px;
+				margin-right: 120px;
+			}
+
+			.shopping_Header {
+				display: inline-block;
+			}
+
+			.Commodity_information_header {
+				margin-right: 290px;
+			}
+
+			.Unit_Price_header {
+				margin-right: 134px;
+			}
+
+			.num_header {
+				margin-right: 131px;
+			}
+
+			.Subtotal_header {
+				margin-right: 130px;
+			}
+
+			.shopping_list {
+				border: 1px solid #dddddd;
+			}
+
+			.shopping_list input {
+				display: inline-block;
+				margin-left: 10px;
+			}
+
+			.shopping_list img {
+				display: inline-block;
+				height: 120px;
+				width: 120px;
+				vertical-align: middle;
+			}
+
+			.shopping_txt {
+				display: inline-block;
+				width: 250px;
+				margin-top: 5px;
+				margin-left: 40px;
+				color: #666666;
+			}
+
+			.Model {
+				color: #999999;
+			}
+
+			.money {
+				display: inline-block;
+				width: 40px;
+				margin-left: 88px;
+				margin-right: 88px;
+			}
+
+			.num {
+				display: inline-block;
+			}
+
+			.num_reduce {
+				background-color: #FFFFFF;
+				border: 1px solid #DDDDDD;
+				padding: 6px 4px;
+				cursor: pointer;
+			}
+
+			.num_plus {
+				background-color: #FFFFFF;
+				border: 1px solid #DDDDDD;
+				padding: 6px 4px;
+				cursor: pointer;
+			}
+
+			.number {
+				display: inline-block;
+				border: 1px solid #DDDDDD;
+				border-left: 0;
+				border-right: 0;
+				width: 42px;
+				text-align: center;
+				padding: 6px 0;
+			}
+
+			.total {
+				display: inline-block;
+				margin-left: 98px;
+				width: 60px;
+				text-align: center;
+			}
+
+			.operation {
+				display: inline-block;
+				margin-left: 100px;
+				text-align: center;
+			}
+
+			.del {
+				margin-bottom: 4px;
+				cursor: pointer;
+			}
+
+			.Settlement {
+				line-height: 60px;
+				background-color: #F2F2F2;
+				margin-top: 40px;
+				margin-bottom: 90px;
+			}
+
+			.Settlement input {
+				margin-left: 10px;
+			}
+
+			.Settlement .All_election {
+				display: inline-block;
+				margin-left: 32px;
+				margin-right: 0;
+			}
+
+			.Settlement_del {
+				display: inline-block;
+				margin-left: 38px;
+			}
+
+			.Settlement_Move_in_collection {
+				display: inline-block;
+				margin-left: 38px;
+			}
+
+			.Invalid {
+				display: inline-block;
+				margin-left: 38px;
+			}
+
+			.Settlement_Selected {
+				display: inline-block;
+				margin-left: 170px;
+			}
+
+			.Total {
+				display: inline-block;
+				margin-left: 230px;
+				line-height: 60px;
+				vertical-align: middle;
+			}
+
+			.Settlement_total {
+				line-height: 14px;
+			}
+
+			.Settlement_Total {
+				line-height: 14px;
+			}
+
+			.Settlement_btn {
+				display: inline-block;
+				padding: 24px 76px;
+				border: 0;
+				background-color: #CC5252;
+				color: #FFFFFF;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 引入header -->
+		<iframe src="header.html" width="100%" height="28px" scrolling="no"></iframe>
+		<div class="container relative">
+			<div class="head clearfix">
+				<a href="index.html">
+					<div class="logo fl">
+						<img src="./img/index/ia_100000003.png">
+						<img src="./img/index/ia_100000004.png">
+					</div>
+				</a>
+				<div class="nav fr">
+					<div class="gray_line relative">
+						<div class="red_line"></div>
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+						<div class="four"></div>
+						<div class="one_1">购物车</div>
+						<div class="two_2">填写订单信息</div>
+						<div class="three_3">支付订单</div>
+						<div class="four_4">等待签收</div>
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="title">全部商品</div>
+				<div class="cart_nav">
+					<input class="All_election_input" type="checkbox" />
+					<div class="All_election">全选</div>
+					<div class="shopping_Header Commodity_information_header">商品信息</div>
+					<div class="shopping_Header Unit_Price_header">单价</div>
+					<div class="shopping_Header num_header">数量</div>
+					<div class="shopping_Header Subtotal_header">小计</div>
+					<div class="shopping_Header operation_header">操作</div>
+				</div>
+				<div class="shopping_list">
+					<input class="input" type="checkbox" />
+					<img src="./img/index/ia_500007494.jpg">
+					<div class="shopping_txt">
+						<div>迪士尼（Disney）-漫威系列儿童手表 MV81...</div>
+						<div class="Model">真皮 其他</div>
+					</div>
+					<div class="money">￥99</div>
+					<div class="num">
+						<button type="button" class="num_reduce">-</button><span class="number">1</span><button type="button" class="num_plus">+</button>
+					</div>
+					<div class="total">￥99</div>
+					<div class="operation">
+						<div class="del">删除</div>
+						<div class="Move_in_collection">移入收藏</div>
+					</div>
+				</div>
+				<div class="shopping_list">
+					<input class="input" type="checkbox" />
+					<img src="./img/index/ia_100006205.jpg">
+					<div class="shopping_txt">
+						<div>迪士尼（Disney）-时尚运动手表 MK-15015...</div>
+						<div class="Model">橡胶 黑色</div>
+					</div>
+					<div class="money">￥128</div>
+					<div class="num">
+						<button type="button" class="num_reduce">-</button><span class="number">1</span><button type="button" class="num_plus">+</button>
+					</div>
+					<div class="total">￥128</div>
+					<div class="operation">
+						<div class="del">删除</div>
+						<div class="Move_in_collection">移入收藏</div>
+					</div>
+				</div>
+				<div class="shopping_list">
+					<input class="input" type="checkbox" />
+					<img src="./img/index/ia_100006465.jpg">
+					<div class="shopping_txt">
+						<div>迪士尼（Disney）-时尚运动手表 MK-15015...</div>
+						<div class="Model">橡胶 黑色</div>
+					</div>
+					<div class="money">￥168</div>
+					<div class="num">
+						<button type="button" class="num_reduce">-</button><span class="number">1</span><button type="button" class="num_plus">+</button>
+					</div>
+					<div class="total">￥168</div>
+					<div class="operation">
+						<div class="del">删除</div>
+						<div class="Move_in_collection">移入收藏</div>
+					</div>
+				</div>
+			</div>
+			<!-- 结算栏 -->
+			<div class="Settlement">
+				<input class="All_election_input" type="checkbox" />
+				<div class="All_election">全选</div>
+				<div class="Settlement_del">删除</div>
+				<div class="Settlement_Move_in_collection">移入收藏</div>
+				<div class="Invalid">清空失效商品</div>
+				<div class="Settlement_Selected">已选商品<span class="Settlement_num">0</span>件</div>
+				<div class="Total">
+					<div class="Settlement_total">合计<span>￥0</span></div>
+					<div class="Settlement_Total">总额<span>￥0</span></div>
+				</div>
+				<a href="new_order.html"><button class="Settlement_btn fr" type="button">结算</button></a>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- 引入表尾 -->
+		<iframe src="footer.html" width="100%" height="649px" scrolling="no"></iframe>
+		<script src="./js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 全选
+			$('.All_election_input').click(function() {
+				var input = $('.All_election_input').prop('checked');
+				if (input) {
+					$('.All_election_input').prop('checked', true);
+				} else {
+					$('.All_election_input').prop('checked', false);
+				}
+			})
+			// 加
+			$('.num_plus').click(function() {
+				var num = $(this).parent().find('.number').text();
+				num -= 0;
+				$num = $(this).parent().find('.number').text(num + 1)
+				var money = $(this).parents('.shopping_list').find('.money').text().split('￥')[1];
+				$(this).parents('.shopping_list').find('.total').text("￥" + money * (num + 1));
+				input();
+			})
+			// 减
+			$('.num_reduce').click(function() {
+				var num = $(this).parent().find('.number').text();
+				if (num < 2) {
+					num = 2;
+				}
+				$num = $(this).parent().find('.number').text(num - 1)
+				var money = $(this).parents('.shopping_list').find('.money').text().split('￥')[1];
+				$(this).parents('.shopping_list').find('.total').text("￥" + money * (num - 1));
+				input();
+			})
+			// 删除
+			$('.del').click(function() {
+				$(this).parents('.shopping_list').remove();
+			})
+			// 结算
+			function input(){
+			$('.input').click(function() {
+				var input = $(this).prop('checked');
+				if (input) {
+					$(this).parents('.shopping_list').addClass("on");
+					$('.Settlement_num').text($('.Settlement_num').text() - -1)
+				} else {
+					$(this).parents('.shopping_list').removeClass("on");
+					$('.Settlement_num').text($('.Settlement_num').text() - 1)
+				};
+				var numm = $('.on').find('.total').text().split('￥')
+				var n = 0;
+				$.each(numm,function(index,item){
+					item -= 0;
+					n = n + item;
+				})
+				$('.Settlement_total span').text('￥'+n);
+				$('.Settlement_Total span').text('￥'+n);
+				console.log(1)
+			})
+			}
+			input();
+		</script>
+	</body>
+</html>

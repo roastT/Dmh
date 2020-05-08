@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>万表网：确认订单</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="lib/layer/mobile/need/layer.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/new_order.css" />
+	</head>
+	<body>
+		<!-- 引入表头 -->
+		<iframe src="header.html" width="100%" height="28px" scrolling="no"></iframe>
+		<div class="container relative">
+			<div class="head clearfix">
+				<a href="index.html">
+					<div class="logo fl">
+						<img src="./img/index/ia_100000003.png">
+						<img src="./img/index/ia_100000004.png">
+					</div>
+				</a>
+				<div class="nav fr">
+					<div class="gray_line relative">
+						<div class="red_line"></div>
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+						<div class="four"></div>
+						<div class="one_1">购物车</div>
+						<div class="two_2">填写订单信息</div>
+						<div class="three_3">支付订单</div>
+						<div class="four_4">等待签收</div>
+					</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="address clearfix">
+					<div class="title">
+						收货人信息
+						<a class="go" href="User_center.html">管理收货地址</a>
+					</div>
+					<div class="receiving_address">
+						<div class="Already_existing">
+						</div>
+						<button class="Newly_added" type="button">+添加收货地址</button>
+					</div>
+				</div>
+				<div class="menu clearfix">
+					<div class="title">
+						<span>送货清单(<span id="total">2</span>)</span>
+						<a class="go" href="shopping_cart.html">返回购物车修改</a>
+					</div>
+					<div class="product_box">
+						<div class="name">
+							<span>阿玛尼ARMANI (<span id="num">1</span>)</span>
+						</div>
+						<div class="main relative">
+							<a href="product.html">
+								<div class="product clearfix">
+									<img class="fl" src="img/new_order/product1.jpg">
+									<div class="fl">
+										<div class="pro_title">
+											阿玛尼 GIANNI T-B系列 满天星 镶钻星空 AR1926 石英女表
+										</div>
+										<div class="design">
+											钢 白色 镶钻 不锈钢
+										</div>
+										<div class="yellow">
+											7天退换
+										</div>
+									</div>
+								</div>
+							</a>
+							<div class="unit_price">
+								&yen;3271
+							</div>
+							<div class="counter clearfix">
+								<div class="left fl">
+									-
+								</div>
+								<div class="number fl">
+									1
+								</div>
+								<div class="right fl">
+									+
+								</div>
+							</div>
+							<div class="amount">
+								&yen;3271
+							</div>
+
+						</div>
+					</div>
+					<div class="product_box">
+						<div class="name">
+							<span>德国拓天马官方旗舰店(<span id="num">1</span>)</span>
+
+						</div>
+						<div class="main relative">
+							<a href="product.html">
+								<div class="product clearfix">
+									<img class="fl" src="img/new_order/product2.jpg">
+									<div class="fl">
+										<div class="pro_title">
+											拓天马Tutima-Grand Flieger Airport空港系列 蓝色魅影 6101-03 自动机械男表
+										</div>
+										<div class="design">
+											牛皮 蓝色
+										</div>
+										<div class="yellow">
+											7天退换
+										</div>
+									</div>
+								</div>
+							</a>
+							<div class="unit_price">
+								&yen;14400
+							</div>
+							<div class="counter clearfix">
+								<div class="left fl">
+									-
+								</div>
+								<div class="number fl">
+									1
+								</div>
+								<div class="right fl">
+									+
+								</div>
+							</div>
+							<div class="amount">
+								&yen;14400
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="fp">
+					<div class="title">
+						发票类型
+					</div>
+					<a class="go" href="#">填写信息</a>
+				</div>
+				<div class="ticket">
+					<div class="title">
+						优惠券/现金券/礼金券/青苗抵用
+					</div>
+					<div class="txt">
+						共抵用<i>100</i>元 青苗可抵<i>0</i>元
+						<a class="go" href="#">修改</a>
+					</div>
+				</div>
+				<div class="talk relative">
+					<div class="title">留言</div>
+					<textarea class="info" placeholder="请输入..." rows="8" cols="50"></textarea>
+					<small>0/200</small>
+				</div>
+			</div>
+			<!-- 时间线 -->
+			<div class="timeline">
+				<div class="one">·</div>
+				<div class="two">·</div>
+				<div class="three">·</div>
+				<div class="four">·</div>
+				<div class="five">·</div>
+			</div>
+
+			<!-- 合计总数 -->
+			<p>商品总额 <i id="all">&yen;17671</i></p>
+			<p>活动优惠 <i id="discount">-&yen;1400</i></p>
+			<p>运费 <i id="freight">-&yen;0</i></p>
+			<div class="ok relative">
+				<span>应付款</span>
+				<i id="total_price">&yen;16271</i>
+				<a href="pay.html">
+					<div class="red">
+						提交订单
+					</div>
+				</a>
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jQueryDistpicker20160621/distpicker.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jQueryDistpicker20160621/distpicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jQueryDistpicker20160621/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/new_order.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

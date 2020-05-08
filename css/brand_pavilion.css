@@ -1,0 +1,164 @@
+.mwh{
+	width: 100%;
+	height: 20px;
+	margin-top: 500px;
+}
+/* 第一轮播图 */
+.pavilion_one .swiper-container {
+	width: 100%;
+	height: 430px;
+}
+.pavilion_one .swiper-pagination-bullet{
+	width: 35px;
+	height: 4px;
+	background-color: coral;
+	border-radius: 0px;
+}
+/* 第二轮播图 */
+.pavilion_two{
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #F2F2F2;
+}
+.pavilion_two .swiper-container{
+	width: 1000px;
+	height: 134px;
+}
+.pavilion_ph{
+	width: 132px;
+	height: 132px;
+	line-height: 132px;
+	text-align: center;
+	background-color: white;
+	position: relative;
+	margin-right: 10px;
+}
+.pavilion_ph img{
+	padding-top: 30px;
+}
+.pavilion_bg{
+	position: absolute;
+	top: 0px;
+	height: 0px;
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	border: 2px solid coral;
+	color: coral;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: #F1F1F1;
+	opacity: 0;
+}
+.pavilion_ph:hover .pavilion_bg{
+	opacity: 1;
+}
+/* 人气商品 */
+.moods{
+	width: 100%;
+	background-color: white;
+}
+.moods .goods_box{
+	width: 215px;
+	text-align: center;
+	
+}
+.moods .monthmoney{
+	margin-left: 20px;
+}
+.moods li{
+	padding: 15px 0px;
+}
+.moods .goods_box:hover{
+	border: 2px solid gainsboro;
+}
+.block{
+	display: block;
+}
+.none{
+	display: none;
+}
+.moods_title_box{
+	text-align: center;
+}
+.moods_cn{
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 60px;
+}
+.moods_en{
+	color: #000000;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+.moods_bottom{
+	text-align: center;
+}
+.moods_bottom{
+	font-size: 15px;
+	padding-bottom: 20px;
+	
+}
+.moods_bottom span{
+	cursor: pointer;
+}
+/* 人气店铺 */
+.store{
+	width: 100%;
+	padding-bottom: 90px;
+	background-color: #F2F2F2;
+}
+.store_box{
+	width: 380px;
+	height: 300px;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	margin-right: 20px;
+	
+}
+.store_title,.store_txt{
+	padding: 3px 17px;
+}
+.store_title{
+	font-size: 16px;
+	color: #000000;
+	margin-top: 5px;
+}
+.store_txt{
+	font-size: 12px;
+	margin-top: 10px;
+}
+.store_bg{
+	position: absolute;
+	top: 240px;
+	left: 7px;
+	width: 365px;
+	height: 55px;
+	background-color: white;
+	display: none;
+}
+.store_box:hover .store_bg{
+	display: block;
+}
+.store_bg_txt{
+	margin-top: 12px;
+	padding: 0px 10px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid gray;
+	border-radius: 30px;
+	margin-left: 4px;
+}
+.store_bg_ho{
+	margin-top: 12px;
+	padding: 0px 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.store li{
+	margin-top: 10px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<style type="text/css">
+			.container {
+				width: 930px;
+			}
+
+			.Order_number {
+				font-size: 16px;
+				color: #333333;
+				line-height: 48px;
+			}
+
+			.loading {
+				font-size: 27px;
+				line-height: 100px;
+				background-color: #CB5451;
+				border-radius: 8px;
+				color: #FFFFFF;
+				padding-left: 40px;
+			}
+
+			.details {
+				display: inline-block;
+				padding-top: 24px;
+				width: 305px;
+				vertical-align: top;
+			}
+
+			.details div {
+				padding-left: 13px;
+				margin-bottom: 12px;
+			}
+
+			.Amount_to_be_paid {
+				color: #CB5451;
+			}
+
+			.Cancellation_of_order {
+				display: inline-block;
+				border: 1px solid #999999;
+				color: #999999;
+				margin-right: 10px;
+				width: 57px;
+				text-align: center;
+				padding: 16px 32px;
+				border-radius: 24px;
+				margin-top: 60px;
+				cursor: pointer;
+			}
+			.To_pay{
+				display: inline-block;
+				background-color: #CB5451;
+				color: #FFFFFF;
+				margin-right: 10px;
+				width: 57px;
+				text-align: center;
+				padding: 16px 32px;
+				border-radius: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="Order_number">订单号：20022100052007</div>
+			<div class="loading">等待买家付款</div>
+			<span class="details">
+				<div class="name">收货人：<span>***</span></div>
+				<div class="Cell_phone_number">手机号：<span>139********</span></div>
+				<div class="Receiving_address">收货地址：<span>山东省**市**县***村</span></div>
+			</span>
+			<span class="details">
+				<div>发票类型：电子发票</div>
+				<div>发票抬头：个人</div>
+				<div>发票内容：明细</div>
+			</span>
+			<span class="details">
+				<div class="time">下单时间：<span>2020-02-21 10:24:20</span></div>
+				<div>支付方式：未知</div>
+				<div class="Total_commodity_price">商品总额：<span>￥99</span></div>
+				<div class="freight">运费：<span>￥0</span></div>
+				<div class="Amount_payable">应付金额：<span>￥99</span></div>
+				<div class="amount_paid">已付金额：<span>￥0</span></div>
+				<div class="Amount_to_be_paid">待付金额：<span>￥99</span></div>
+			</span>
+			<div class="fr">
+				<div class="Cancellation_of_order">取消订单</div>
+				<a href="pay.html" target="_blank">
+					<div class="To_pay">去支付</div>
+				</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 取消订单弹框
+			$('.Cancellation_of_order').click(function(){
+				layer.confirm('确定取消订单吗？',function(){
+					layer.msg('成功取消')
+				},function () {
+					layer.msg('已终止')
+				})
+			})
+		</script>
+	</body>
+</html>

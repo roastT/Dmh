@@ -1,0 +1,61 @@
+.goods_box {
+	width: 280px;
+	height: 320px;
+	background-color: white;
+	margin-left: 26px;
+}
+
+.goods_mlf {
+	margin-left: 0;
+}
+
+.goods_ph {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.goods_title {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.goods_txt {
+	text-align: center;
+	font-size: 13px;
+	padding-top: 8px;
+}
+
+.goods_price {
+	padding-top: 8px;
+}
+
+.monthmoney {
+	background-color: crimson;
+	color: white;
+	font-size: 14px;
+	padding: 1px 2px;
+	border-radius: 5px;
+	margin-left: 58px;
+}
+
+.goods_price_box {
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.goods_price1 {
+	color: crimson;
+	font-weight: bold;
+}
+
+.goods_price2 {
+	color: #000000;
+	font-weight: bold;
+}
+
+.like_body li {
+	margin-top: 18px;
+}

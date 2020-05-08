@@ -1,0 +1,744 @@
+.lead {
+	background: white;
+}
+
+/* 设置页面背景颜色 */
+.transition {
+	transition: all 0.5s;
+}
+
+/* lead头部css样式 */
+.lead_logo {
+	padding-top: 18px;
+	cursor: pointer;
+}
+
+.lead_search .input {
+	outline: none;
+	width: 280px;
+	height: 38px;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid lightgray;
+	padding-left: 30px;
+	font-size: 16px;
+}
+
+.lead_search img {
+	position: absolute;
+	left: 7px;
+	top: 9px
+}
+
+input::-webkit-input-placeholder {
+	color: #333;
+	font-size: 14px;
+}
+
+.lead_search .search {
+	height: 40px;
+	width: 80px;
+	outline: none;
+	font-size: 16px;
+	position: absolute;
+	top: 0px;
+	left: 312px;
+	border: none;
+	background-color: #d35e5e;
+	color: white;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.lead_search {
+	/* position: relative; */
+	margin: 38px 0px 0px 100px;
+}
+
+.lead_qr {
+	cursor: pointer;
+}
+
+.lead {
+	/* background-color: white; */
+	margin: 0;
+}
+
+/* nav导航css样式 */
+.nav .list_nav ul {
+	/* display: none; */
+	padding: 0;
+	margin: 0;
+	width: 200px;
+	height: 460px;
+	position: absolute;
+	background: #e6e6e6;
+	/* 这个位置为什么是负的 */
+	top: -5px;
+	left: 0;
+	display: none;
+}
+
+.sub_title li {
+	float: left;
+	margin: 8px 10px;
+	font-size: 14px;
+	/* padding-bottom: 12px; */
+}
+
+.sub_title li a {
+	color: #333;
+}
+
+.sub_title li:hover {
+	border-bottom: 3px solid crimson;
+}
+
+.sub_title {
+	padding: 6px 0px 0px 40px;
+}
+
+.all_trade {
+	width: 185px;
+	height: 44px;
+	line-height: 44px;
+	color: white;
+	background-color: #b94949;
+	font-size: 14px;
+	padding-left: 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+.all_trade img {
+	position: absolute;
+	top: 8px;
+	left: 158px;
+}
+
+/* 列表导航 */
+.list_nav .nav {
+	width: 180px;
+	padding: 5px;
+	line-height: 45px;
+	padding-left: 15px;
+	color: red;
+	font-size: 12px;
+	color: dimgray;
+	border-bottom-width: 180px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+
+}
+
+.list_nav .nav a:hover {
+	text-decoration: underline;
+}
+
+.list_nav .nav a span {
+	font-size: 13px;
+	font-weight: bold;
+
+}
+
+.list_nav {
+	width: 215px;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	z-index: 100;
+}
+
+.list_nav li:hover {
+	background-color: white;
+	border-left: 4px solid goldenrod;
+	cursor: pointer;
+}
+
+/* 列表导航内容 */
+.nav_content {
+	width: 960px;
+	height: 460px;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	z-index: 100;
+	display: none;
+}
+
+.content_left {
+	padding: 20px 0px 0px 25px;
+}
+
+.content_right {
+	padding: 25px 20px 0px 0px;
+}
+
+.content_txt {
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 10px;
+	border-left: 5px solid grey;
+}
+
+.content_logo table td {
+	border: 1px solid gainsboro;
+	text-align: center;
+	height: 80px;
+	width: 132px;
+}
+
+.nav .td_bg {
+	height: 82px;
+	width: 135px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: goldenrod;
+	color: whitesmoke;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.content_logo table td:hover .td_bg {
+	opacity: 1;
+}
+
+.content_logo {
+	padding: 10px 0 10px 0;
+}
+
+/* 热词小标样式 */
+.hot_txt {
+	padding: 6px 18px;
+	font-size: 15px;
+	margin: 0 3px;
+	border: 1px solid gainsboro;
+	border-radius: 40px;
+	color: #001122;
+}
+
+.nav .hot_box {
+	padding-top: 15px;
+}
+
+.hot_txt:hover {
+	background-color: goldenrod;
+	color: whitesmoke;
+}
+
+/* 鼠标经过li列表显示对应的导航内容 */
+.list_nav li:hover .nav_content {
+	display: block;
+}
+
+/* 灰色小条 */
+.gray {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	background: #F1F1F1;
+	border-top: 2px solid #e3e3e3;
+	overflow: hidden;
+	margin-bottom: 18px;
+}
+
+/* 主要搜索块 */
+.main .left {
+	margin-right: 20px;
+	width: 210px;
+}
+
+/* 小轮播图 */
+.main .left .swiper1_box .swiper-wrapper {
+	width: 210px;
+	height: 400px;
+}
+
+.main .left .swiper1_box .swiper-pagination {
+	position: absolute;
+	left: 45%;
+}
+
+:root {
+	--swiper-theme-color: #cc9952
+}
+
+/* 第二个轮播图 */
+.main .left .swiper2_box {
+	margin-top: 46px;
+	border: 1px solid #eee;
+	padding-bottom: 36px;
+}
+
+.main .left .swiper2_box .swiper-pagination {
+	position: absolute;
+	left: 30%;
+	bottom: 10px
+}
+
+.main .left .swiper2_box .title {
+	background-color: #f1f1f1;
+}
+
+.main .left .swiper2_box .txt1 {
+	display: inline-block;
+	cursor: pointer;
+	color: #666;
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: 104px;
+}
+
+.main .left .swiper2_box .txt2 {
+	display: inline-block;
+	cursor: pointer;
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: 104px;
+}
+
+/* 可选左右盒子 */
+#swiper2_02 {
+	height: 0;
+}
+
+#swiper2_02 img {
+	display: none;
+}
+
+.main .left .swiper2_box .swiper-wrapper {
+	width: 208px;
+	height: 276px;
+}
+
+
+.main .rolex_logo {
+	position: absolute;
+	top: -93px;
+	left: 20px;
+}
+
+/* 分类开始 */
+
+.main .right .search {
+	margin-top: 37px;
+	border: 1px solid #ddd;
+	/* 不设高度只有两行的高度？ */
+	/* height: 500px; */
+	width: 968px;
+}
+
+.main .search .title {
+	/* position: relative; */
+	background: #fafafa;
+	min-width: 22px;
+	line-height: 22px;
+	padding: 5px 80px 5px 12px;
+	color: #666;
+}
+
+.main .search .tbody {
+/* 	display: block; */
+	/* height: 202px; */
+}
+
+.main .search dl {
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+
+.main .search dt {
+	float: left;
+	width: 56px;
+	padding: 0 12px;
+	font-weight: 700;
+	color: #666;
+	background-color: #fafafa;
+	line-height: 40px;
+	height: 100%;
+}
+
+.main dd {
+	width: 660px;
+	float: left;
+	padding: 8px 20px;
+	line-height: 24px;
+}
+
+.main .search li {
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
+	background: white;
+}
+
+.main .search li.hidden{
+	display: none;
+}
+
+/* 多选功能 */
+.main .search dl span {
+	display: inline-block;
+	width: 50px;
+	background: #f0f0f0;
+	border: 1px solid #ececec;
+	text-align: center;
+	color: #666;
+	font-weight: 700;
+	cursor: pointer;
+	position: absolute;
+	top: 7px;
+	right: 30px;
+}
+
+/* 更多 */
+.main .search dl i{
+	display: inline-block;
+	width: 50px;
+	background: #f0f0f0;
+	border: 1px solid #ececec;
+	text-align: center;
+	color: #666;
+	font-weight: 700;
+	font-style: normal;
+	cursor: pointer;
+	position: absolute;
+	top: 7px;
+	right: 100px;
+}
+
+.main .search #more_dl {
+	display: none;
+}
+
+.main .more {
+	width: 280px;
+	height: 24px;
+	line-height: 20px;
+	position: absolute;
+	bottom: -27px;
+	left: 50%;
+	margin-left: -137px;
+	text-align: center;
+	margin-bottom: 1px;
+	border: 1px solid #eee;
+	border-top: 1px solid white;
+	cursor: pointer;
+}
+
+/* 排序 */
+.sort {
+	margin-top: 46px;
+	width: 970px;
+	position: relative;
+	padding-top: 40px;
+}
+
+.sort .nav {
+	border-bottom: 1px solid #eee;
+	position: absolute;
+	padding-top: 10px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding-left: 12px;
+	width: 100%;
+	background: white;
+}
+
+.sort .nav li {
+	display: block;
+	float: left;
+	margin: 0 14px;
+	height: 26px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sort .nav li:first-child {
+	color: #CC9952;
+	border-bottom: 3px solid #CC9952;
+	font-weight: 700px;
+}
+
+.sort .nav li:hover {
+	color: #CC9952;
+	border-bottom: 3px solid #CC9952;
+	font-weight: 700px;
+}
+
+/* 产品开始 */
+.sort .watch_box a {
+	text-decoration: none;
+}
+
+.sort .watch_box {
+	position: relative;
+	width: 230px;
+	height: 436px;
+	display: block;
+	overflow: hidden;
+	float: left;
+	margin: 10px 8.4px 10px 0;
+	border: 2px solid white;
+}
+
+.sort .watch_box:hover {
+	border: 2px solid #eee;
+}
+
+.sort .watch_box img {
+	width: auto;
+	height: 275px;
+	position: absolute;
+	left: 50%;
+	margin-left: -137.5px;
+}
+
+.sort .watch_box .price {
+	text-align: left;
+	margin-bottom: 12px;
+	padding: 290px 6px 0 6px;
+}
+
+.sort .watch_box span {
+	margin-right: 2px;
+	color: #e65c5c;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.sort .watch_box span em {
+	display: inline-block;
+	padding: 0 2px;
+	background: linear-gradient(270deg, #ff8080 0, #e65c5c 100%);
+	border-radius: 2px;
+	font-size: 12px;
+	color: #fff;
+	font-style: normal;
+	margin-left: 0;
+}
+
+.sort .watch_box i {
+	font-style: normal;
+	font-size: 12px;
+	color: #999;
+}
+
+.sort .watch_box strong {
+	color: #666;
+	font-size: 16px;
+	padding-left: 2px;
+}
+
+.sort .watch_box p {
+	color: #666;
+	height: 36px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 7px;
+}
+
+.sort .price .yellow {
+	border: 1px solid #CC9952;
+	color: #cc9952;
+	border-radius: 2px;
+	text-align: center;
+	width: 60px;
+	margin-top: 16px;
+}
+
+/* 左侧第三列 */
+.main .left .recent {
+	margin: 30px 0;
+}
+
+.main .left .recent .title {
+	color: #666;
+	font-size: 14px;
+	font-weight: 700;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f1f1f1;
+	padding-left: 12px;
+}
+
+.main .left .recent a {
+	text-decoration: none;
+
+}
+
+.main .left .recent .center {
+	overflow: hidden;
+	padding-top: 0;
+	border: 1px solid #eee;
+	padding: 0 10px
+}
+
+.main .left .recent img {
+	height: 178px;
+	width: auto;
+	margin-top: 20px;
+}
+
+.main .left .recent .money {
+	text-align: left;
+	margin-bottom: 12px;
+}
+
+.main .left .recent span {
+	margin-right: 2px;
+	color: #e65c5c;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.main .left .recent span em {
+	display: inline-block;
+	padding: 0 2px;
+	background: linear-gradient(270deg, #ff8080 0, #e65c5c 100%);
+	border-radius: 2px;
+	font-size: 12px;
+	color: #fff;
+	font-style: normal;
+	margin-left: 0;
+}
+
+.main .left .recent i {
+	font-style: normal;
+	font-size: 12px;
+	color: #eee;
+}
+
+.main .left .recent strong {
+	color: #666;
+	font-size: 14px;
+	padding-left: 2px;
+}
+
+.main .left .recent p {
+	color: #999;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 7px;
+}
+
+/* 侧边栏 */
+.ofixed {
+	position: fixed;
+	top: 0px;
+	right: -302px;
+	z-index: 1001;
+}
+
+.oside_box {
+	width: 300px;
+	height: 755px;
+	background-color: #dadada;
+	border-left: 2px solid #000000;
+}
+
+.oside_lf_bg {
+	padding: 5px 5px;
+	background-color: #f2f2f2;
+	position: relative;
+}
+
+.oside_lf_bg:hover {
+	background-color: #e2e2e2;
+	cursor: pointer;
+}
+
+.oside_lf_bg:hover .oside_bg {
+	display: block;
+}
+
+.oside_lf {
+	padding-top: 510px;
+}
+
+.oside_bg {
+	width: 75px;
+	height: 41px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 13px;
+	background-color: #e2e2e2;
+	position: absolute;
+	top: 0px;
+	left: -74px;
+	display: none;
+}
+
+.oside_bg_note {
+	position: absolute;
+	top: -98px;
+	left: -175px;
+	width: 169px;
+	height: 169px;
+	text-align: center;
+	padding-top: 5px;
+	background-color: whitesmoke;
+	border: 3px solid #e2e2e2;
+	display: none;
+}
+
+.oside_lf_four:hover .oside_bg_note {
+	display: block;
+}
+
+.oside_title_box {
+	width: 300px;
+	height: 50px;
+	background-color: #F2F2F2;
+}
+
+.oside_title {
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+.oside_del {
+	padding: 13px 20px;
+}
+
+.oside_del img:hover {
+	cursor: pointer;
+}
+
+/* 第二个轮播图的样式 */
+/* .swiper2_box .swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets span {
+	width: 10px;
+	border-radius: 0;
+} */
+
+.swiper2_box .swiper-pagination-bullet {
+	width: 20px;
+	height: 4px;
+	background-color: orange;
+	border-radius: 0px;
+	margin: 0 auto;
+	margin: 0px 2px;
+}
+
+.swiper2_box .swiper-container {
+	width: 208px;
+}
